@@ -22,7 +22,7 @@ class Game:
       num = self.__previousNumber
 
       while num == self.__previousNumber:
-        num = random.randint(0, (2 ** (2 + self.__level)) - 1)
+        num = random.randint((2 ** (self.__level)), (2 ** (2 + self.__level)) - 1)
 
       self.__previousNumber = num
 
