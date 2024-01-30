@@ -15,9 +15,6 @@ class Game:
     self.__display = ShowBinary()
 
   def start(self):
-    self.__display.showCorrect()
-
-    time.sleep(1)
     while self.__player.getLifes() > 0:
       num = self.__previousNumber
 
